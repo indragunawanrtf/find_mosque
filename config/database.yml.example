@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: 
+  password:  
+  pool: 5
+
+development:
+  <<: *default
+  database: find_mosque_development
+
+test:
+  <<: *default
+  database: find_mosque_test
+
+staging:
+  <<: *default
+  database: find_mosque_staging
+
+production:
+  <<: *default
+  database: find_mosque_production
