@@ -10,10 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170821162422) do
+ActiveRecord::Schema.define(version: 20170822155005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "mesjids", force: :cascade do |t|
+    t.string "name"
+    t.string "kota"
+    t.string "kecamatan"
+    t.string "code"
+    t.text "alamat"
+    t.decimal "latitude"
+    t.decimal "longitude"
+    t.string "tahun_berdiri"
+    t.string "jenis"
+    t.string "status_tanah"
+    t.integer "province_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "provinces", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "roles", force: :cascade do |t|
     t.string "name"
