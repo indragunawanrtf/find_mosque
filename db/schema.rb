@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20170822155005) do
 
   create_table "mesjids", force: :cascade do |t|
     t.string "name"
+    t.text "description"
     t.string "kota"
     t.string "kecamatan"
     t.string "code"
@@ -27,6 +28,10 @@ ActiveRecord::Schema.define(version: 20170822155005) do
     t.string "jenis"
     t.string "status_tanah"
     t.integer "province_id"
+    t.time "open_time"
+    t.time "closed_time"
+    t.text "notes"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,7 +42,7 @@ ActiveRecord::Schema.define(version: 20170822155005) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "roles", force: :cascade do |t|
+  create_table "user_types", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.datetime "created_at", null: false
@@ -47,7 +52,7 @@ ActiveRecord::Schema.define(version: 20170822155005) do
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.integer "role_id"
+    t.integer "user_type_id"
     t.string "username"
     t.string "full_name"
     t.string "phone"
@@ -59,6 +64,13 @@ ActiveRecord::Schema.define(version: 20170822155005) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
+    t.integer "failed_attempts", default: 0, null: false
+    t.string "unlock_token"
+    t.datetime "locked_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

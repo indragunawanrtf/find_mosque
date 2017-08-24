@@ -33,6 +33,7 @@ module SeedMesjid
     mesjid = Mesjid.find_or_initialize_by(name: data[3].text, province_id: province_id, kota: data[9].text, kecamatan: data[11].text)
     mesjid.jenis = data[15]
     mesjid.status_tanah = data[17]
+    mesjid.user_id = User.first.id
     mesjid.save
   end
 end

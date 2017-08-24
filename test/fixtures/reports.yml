@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reportable_id: 1
+  reportable_type: MyString
+  user_id: 1
+  notes: MyText
+
+two:
+  reportable_id: 1
+  reportable_type: MyString
+  user_id: 1
+  notes: MyText

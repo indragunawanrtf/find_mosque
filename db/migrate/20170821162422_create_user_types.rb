@@ -1,6 +1,6 @@
-class CreateRoles < ActiveRecord::Migration[5.1]
+class CreateUserTypes < ActiveRecord::Migration[5.1]
   def change
-    create_table :roles do |t|
+    create_table :user_types do |t|
       t.string :name
       t.string :description
 

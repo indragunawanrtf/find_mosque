@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'nokogiri'
+# gem 'geocoder'
 
 gem 'adminlte-rails'
 gem 'kaminari', github: "amatsuda/kaminari"

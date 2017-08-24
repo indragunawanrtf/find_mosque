@@ -1,0 +1,2 @@
+class Kajian < ApplicationRecord
+end
