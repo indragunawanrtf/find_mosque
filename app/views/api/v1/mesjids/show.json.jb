@@ -1,0 +1,35 @@
+if @kajians.blank?
+  kajians = {}
+else
+  kajians = 
+    @kajians.each do |kajian|
+      {
+        name: kajian.name,
+        ustad: kajian.ustad.name,
+        start_time: kajian.start_at
+      }
+    end
+end
+json =
+  {
+    data:
+      {
+        id: @mesjid.id,
+        name: @mesjid.name,
+        description: @mesjid.description,
+        latitude: @mesjid.latitude,
+        longitude: @mesjid.longitude,
+        province: @mesjid.province.name,
+        kota: @mesjid.kota,
+        alamat: @mesjid.alamat,
+        picture: @mesjid.picture.url(:thumbnail),
+        open_time: @mesjid.open_time,
+        close_time: @mesjid.close_time,
+        jenis: @mesjid.jenis,
+        tahun_berdiri: @mesjid.tahun_berdiri,
+        status_tanah: @mesjid.status_tanah,
+        kecamatan: @mesjid.kecamatan,
+      }
+  }
+
+json

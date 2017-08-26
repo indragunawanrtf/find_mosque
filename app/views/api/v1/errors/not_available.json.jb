@@ -1,0 +1,6 @@
+{
+  error: {
+      message: "Not Available",
+      code: 401
+    }
+}
