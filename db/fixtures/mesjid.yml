@@ -1,0 +1,15 @@
+mesjids:
+  mesjid_1:
+    name: 'Al-Hidayah' 
+    description: 'Mesjid Jami Al-Hidayah'
+    alamat: 'Jl. H. Soleh 2 No 19a, RT.7/RW.2, Kelurahan Sukabumi Selatan, Kecamatan Kebon Jeruk, Kota Jakarta Barat, DKI Jakarta 11560'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Kebon Jeruk'
+    latitude:  6.220541
+    longitude: 106.776768
+    jenis: 'Mesjid Jami'
+    tahun_berdiri: ''
+    status_tanah: 'Wakaf'
+    open_time: '04:00'
+    close_time: '21:00'

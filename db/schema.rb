@@ -106,7 +106,14 @@ ActiveRecord::Schema.define(version: 20170824153906) do
     t.string "name"
     t.text "description"
     t.text "notes"
+<<<<<<< HEAD
     t.integer "user_id"
+=======
+    t.text "bidang"
+    t.string "pekerjaan"
+    t.integer "user_id"
+    t.integer "mesjid_id"
+>>>>>>> c1e8ff05733556cfa3501b605e86f73a69793d2e
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

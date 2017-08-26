@@ -1,0 +1,19 @@
+json =
+  {
+    data:
+      @mesjids.map do |mesjid|
+        {
+          id: mesjid.id,
+          name: mesjid.name,
+          description: mesjid.description,
+          latitude: mesjid.latitude,
+          longitude: mesjid.longitude,
+          province: mesjid.province.name,
+          kota: mesjid.kota,
+          alamat: mesjid.alamat,
+          url: api_mesjid_url(mesjid.id)
+        }
+      end
+  }
+
+json
