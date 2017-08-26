@@ -63,8 +63,13 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
+    autoprefixer-rails (7.1.2.4)
+      execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     cancan (1.6.10)
@@ -228,6 +233,7 @@ PLATFORMS
 DEPENDENCIES
   adminlte-rails
   annotate
+  bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
   cancan
   capybara (~> 2.13)
@@ -255,4 +261,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
