@@ -1,67 +1,27 @@
-<body class="skin-blue sidebar-mini">
-  <div class="wrapper">
-
-    <header class="main-header">
-      <a href="#" class="logo">
-        <span class="logo-mini"><b>F</b>MQ</span>
-        <span class="logo-lg"><b>Find</b>MOSQUE</span>
-      </a>
-      <nav class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sidebar-wrapper" data-toggle="push-menu" role="button" >
-          <span class="sr-only">Toggle navigation</span>
-        </a>
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><%= link_to "Profile" %></li>
-            <li><%= link_to "Sign Up", new_user_registration_path %></li>
-            <% if user_signed_in? %>
-            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-            <% else %>
-            <li><%= link_to "Log In", new_user_session_path %></li>
-            <% end %>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <aside class="main-sidebar">
-      <section class="sidebar">
-        <form action="#" method="get" class="sidebar-form">
-          <div class="input-group">
-            <input type="text" name="q" class="form-control" placeholder="Search...">
-            <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-          </div>
-        </form>
-        <ul class="sidebar-menu">
-          <li class="header"></li>
-          <ul class="sidebar-menu" data-widget="tree">
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"> Kajian</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"> Masjid</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"> Ustadz</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"> Provinsi</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Report</span></a></li>
-          </ul>
-        </section>
-      </aside>
-
-      <div class="content-wrapper">
-        <section class="content container-fluid">
-          <div class="container">
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
-            <%= yield %>
-          </div>
-        </section>
+<body class="skin-blue">
+  <header class="main-header">
+    <a href="#" class="logo">
+      <span class="logo-lg"><b>Find</b>MOSQUE</span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <% if user_signed_in? %>
+          <li><%= link_to 'Home', viewalldata_path %></li>
+          <%= render 'partial/dropdown' %>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+          <li><%= link_to "Log In", new_user_session_path %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <% end %>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          Info Kajian,Masjid dan Ustadz Indonesia
-        </div>
-        <strong>Copyright &copy; 2017 <a href="#">find MOSQUE</a>.</strong> All rights reserved.
-      </footer>
-    </body>
+  <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </div>
+</body>

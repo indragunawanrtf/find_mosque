@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -39,6 +39,7 @@ gem 'adminlte-rails'
 gem 'kaminari', github: "amatsuda/kaminari"
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'simple_form'
+gem "font-awesome-rails"
 
 gem 'devise'
 gem 'cancan'
