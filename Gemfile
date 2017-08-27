@@ -38,6 +38,7 @@ gem 'geocoder'
 gem 'adminlte-rails'
 gem 'kaminari', github: "amatsuda/kaminari"
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'simple_form'
 
 gem 'devise'
 gem 'cancan'

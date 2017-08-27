@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: domikado
-  password: domikado123
+  username: 
+  password:
   pool: 5
 
 development:
