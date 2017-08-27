@@ -1,4 +1,4 @@
-namespace :api, path: '/', defaults: { format: :json }, constraints: { subdomain: 'api' } do
+namespace :api, defaults: { format: :json } do
 
   scope module: :v1, path: 'v1' do
 	  resources :mesjids, :only => [:index, :show]
