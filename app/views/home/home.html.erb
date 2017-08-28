@@ -1,7 +1,7 @@
 <section class="content">
   <div class="row">
     <div class="col-lg-4 col-xs-5">
-      <div class="small-box bg-aqua">
+      <div class="small-box bg-green">
         <div class="inner">
           <h3>500</h3>
           <p>Data Tempat Kajian</p>
@@ -9,25 +9,25 @@
         <div class="icon">
           <i class="fa fa-map-marker"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info",viewalldata_kajian_path %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
     <div class="col-lg-4 col-xs-5">
-      <div class="small-box bg-green">
+      <div class="small-box bg-blue">
         <div class="inner">
-          <h3>3.500</h3>
+          <h3><%= Mesjid.count %></h3>
           <p>Data Masjid</p>
         </div>
         <div class="icon">
           <i class="fa fa-location-arrow"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info", viewalldata_masjid_path %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
     <div class="col-lg-4 col-xs-5">
@@ -39,40 +39,40 @@
         <div class="icon">
           <i class="fa fa-street-view"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info", viewalldata_ustadz_path %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
     <div class="col-lg-4 col-xs-5">
       <div class="small-box bg-purple">
         <div class="inner">
-          <h3>30</h3>
+          <h3><%= Province.count %></h3>
           <p>Data Provinsi</p>
         </div>
         <div class="icon">
           <i class="fa fa-map-pin"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info", viewalldata_provinsi_path %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
     <div class="col-lg-4 col-xs-5">
       <div class="small-box bg-orange">
         <div class="inner">
-          <h3>50000</h3>
+          <h3><%= User.count %></h3>
           <p>Data User</p>
         </div>
         <div class="icon">
           <i class="fa fa-user-circle"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info" %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
     <div class="col-lg-4 col-xs-5">
@@ -84,10 +84,10 @@
         <div class="icon">
           <i class="fa fa-bar-chart"></i>
         </div>
-        <a href="#" class="small-box-footer">
-          More Info
+        <div class="small-box-footer">
+          <%= link_to "More Info" %>
           <i class="fa fa-arrow-circle-right"></i>
-        </a>
+        </div>
       </div>
     </div>
   </div>
