@@ -1,27 +1,19 @@
-<body class="skin-blue">
-  <header class="main-header">
-    <a href="#" class="logo">
-      <span class="logo-lg"><b>Find</b>MOSQUE</span>
-    </a>
-    <nav class="navbar navbar-static-top" role="navigation">
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <% if user_signed_in? %>
-          <li><%= link_to 'Home', viewalldata_path, class: 'fa fa-university' %></li>
-          <%= render 'partial/dropdown' %>
-          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, data: {confirm: "Are You Sure Exit?"} ,class: 'fa fa-sign-out' %></li>
-          <% else %>
-          <li><%= link_to "Log In", new_user_session_path, class: 'fa fa-sign-in' %></li>
-          <li><%= link_to "Sign Up", new_user_registration_path, class: 'fa fa-registered'%></li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <div class="container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </div>
-</body>
+<header class="main-header">
+  <a href="#" class="logo">
+    <span class="logo-lg"><b>Find</b>MOSQUE</span>
+  </a>
+  <nav class="navbar navbar-static-top" role="navigation">
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
+        <li><%= link_to 'Home', backend_path, class: 'fa fa-university' %></li>
+        <%= render 'partial/dropdown' %>
+        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, data: {confirm: "Are You Sure Exit?"} ,class: 'fa fa-sign-out' %></li>
+        <% else %>
+        <li><%= link_to "Log In", new_user_session_path, class: 'fa fa-sign-in' %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path, class: 'fa fa-registered'%></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>
