@@ -6,7 +6,7 @@ class CreateMesjids < ActiveRecord::Migration[5.1]
       t.string :kota
       t.string :kecamatan
       t.string :code
-      t.text :alamat
+      t.text :address
       t.decimal :latitude
       t.decimal :longitude
       t.string :tahun_berdiri

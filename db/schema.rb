@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170824153906) do
+ActiveRecord::Schema.define(version: 20170830025541) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "auth_tokens", force: :cascade do |t|
+    t.integer "user_id"
+    t.text "device"
+    t.text "token"
+    t.string "os"
+    t.string "os_version"
+    t.string "app_version"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_auth_tokens_on_user_id"
+  end
 
   create_table "kajians", force: :cascade do |t|
     t.string "name"
@@ -33,7 +45,7 @@ ActiveRecord::Schema.define(version: 20170824153906) do
     t.string "kota"
     t.string "kecamatan"
     t.string "code"
-    t.text "alamat"
+    t.text "address"
     t.decimal "latitude"
     t.decimal "longitude"
     t.string "tahun_berdiri"

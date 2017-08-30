@@ -24,7 +24,7 @@ module SeedMesjid
     mesjids.each do |key, value|
       province_id    = Province.find_or_create_by(name: value['province']).id
       mesjid         = Mesjid.find_or_initialize_by(name: value['name'], province_id: province_id, kota: value['kota'], kecamatan: value['kecamatan'])
-      mesjid.alamat  = value['alamat']
+      mesjid.address  = value['address']
       mesjid.description = value['description']
       mesjid.jenis   = value['jenis']
       mesjid.status_tanah  = value['status_tanah']

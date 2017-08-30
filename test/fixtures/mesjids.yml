@@ -5,7 +5,7 @@ one:
   kota: MyString
   kecamatan: MyString
   code: MyString
-  alamat: MyText
+  address: MyText
   latitude: 9.99
   longitude: 9.99
   tahun_berdiri: MyString
@@ -17,7 +17,7 @@ two:
   kota: MyString
   kecamatan: MyString
   code: MyString
-  alamat: MyText
+  address: MyText
   latitude: 9.99
   longitude: 9.99
   tahun_berdiri: MyString

@@ -35,7 +35,7 @@ json =
         longitude: @mesjid.longitude,
         province: @mesjid.province.name,
         kota: @mesjid.kota,
-        alamat: @mesjid.alamat,
+        address: @mesjid.address,
         picture: @mesjid.picture.url(:thumbnail),
         open_time: @mesjid.open_time,
         close_time: @mesjid.close_time,

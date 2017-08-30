@@ -10,7 +10,7 @@ json =
           longitude: mesjid.longitude,
           province: mesjid.province.name,
           kota: mesjid.kota,
-          alamat: mesjid.alamat,
+          address: mesjid.address,
           url: api_mesjid_url(mesjid.id)
         }
       end
