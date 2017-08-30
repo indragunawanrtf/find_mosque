@@ -1,5 +1,5 @@
 if @kajians.blank?
-  kajians = {}
+  kajians = []
 else
   kajians = 
     @kajians.each do |kajian|
@@ -10,6 +10,20 @@ else
       }
     end
 end
+
+if @ustads.blank?
+  ustads = []
+else
+  ustads = 
+    @ustads.each do |us|
+      {
+        name: us.name,
+        bidang: us.bidang,
+        pekerjaan: us.pekerjaan
+      }
+    end
+end
+
 json =
   {
     data:
@@ -29,6 +43,8 @@ json =
         tahun_berdiri: @mesjid.tahun_berdiri,
         status_tanah: @mesjid.status_tanah,
         kecamatan: @mesjid.kecamatan,
+        kajians: kajians,
+        ustads: ustads
       }
   }
 

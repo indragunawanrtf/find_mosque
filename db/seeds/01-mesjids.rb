@@ -33,6 +33,7 @@ module SeedMesjid
       mesjid.tahun_berdiri = value['tahun_berdiri']
       mesjid.latitude      = value['latitude']
       mesjid.longitude     = value['longitude']
+      mesjid.user_id       = User.first.id
       mesjid.save
     end
   end
