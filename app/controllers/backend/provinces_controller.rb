@@ -1,20 +1,20 @@
-class Backend::MesjidsController < Backend::ApplicationController
-  before_action :prepare_mesjid, only: [:show, :edit, :update, :destroy]
-  before_action :prepare_select, only: [:new, :create, :edit, :update]
+class Backend::ProvincesController < Backend::ApplicationController
+  before_action :prepare_province, only: [:show, :edit, :update, :destroy]
+  before_action :prepare_province, only: [:new, :create, :edit, :update]
 
   def index
-    @mesjids = Mesjid.page(params[:page]).per(params[:per])
+    @provinces = Province.page(params[:page]).per(params[:per])
   end
 
   def new
-    @mesjid = Mesjid.new
+    @province = Province.new
   end
 
   def create
-    @mesjid = Mesjid.new(params_mesjid)
+    @province = Province.new params_province
     if @mesjid.save
-      flash[:success] = 'Mesjid successfully created.'
-      redirect_to backend_mesjids_path(@mesjid)
+      flash[:success] = 'Province successfully created.'
+      redirect_to backend_mesjid_path(@mesjid)
     else
       flash[:error] = @mesjid.errors.full_messages
       render :new
@@ -28,9 +28,9 @@ class Backend::MesjidsController < Backend::ApplicationController
   end
 
   def update
-    if @mesjid.update(params_mesjid)
+    if @mesjid.update params_mesjid
       flash[:success] = 'Mesjid successfully updated.'
-      redirect_to backend_mesjids_path(@mesjid)
+      redirect_to backend_mesjid_path(@mesjid)
     else
       flash[:error] = @mesjid.errors.full_messages
       render :edit

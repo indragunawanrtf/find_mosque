@@ -10,6 +10,14 @@ Rails.application.routes.draw do
   devise_for :users, path: "/"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  root 'home#index'
+  get 'home', to: 'home#home'
+
+
+  scope module: 'backend' do
+    resources :mesjids
+  end
+
   draw :backend
   draw :api
 end
