@@ -2,9 +2,9 @@ class Mesjid < ApplicationRecord
 	reverse_geocoded_by :latitude, :longitude
 	after_validation :reverse_geocode  # auto-fetch address
 
-  require 'carrierwave/orm/activerecord'
+  # require 'carrierwave/orm/activerecord'
 
-  mount_uploader :picture, PictureUploader
+  # mount_uploader :picture, PictureUploader
 
 	before_save :set_code
 

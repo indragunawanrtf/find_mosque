@@ -14,7 +14,7 @@ class Backend::MesjidsController < Backend::ApplicationController
     @mesjid = Mesjid.new(params_mesjid)
     if @mesjid.save
       flash[:success] = 'Mesjid successfully created.'
-      redirect_to backend_mesjids_path(@mesjid)
+      redirect_to backend_mesjid_path(@mesjid)
     else
       flash[:error] = @mesjid.errors.full_messages
       render :new
@@ -30,7 +30,7 @@ class Backend::MesjidsController < Backend::ApplicationController
   def update
     if @mesjid.update(params_mesjid)
       flash[:success] = 'Mesjid successfully updated.'
-      redirect_to backend_mesjids_path(@mesjid)
+      redirect_to backend_mesjid_path(@mesjid)
     else
       flash[:error] = @mesjid.errors.full_messages
       render :edit
