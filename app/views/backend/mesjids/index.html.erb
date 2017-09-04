@@ -50,7 +50,7 @@
     <td><%= mesjid.province.name %></td>
     <td>
       <%= link_to "View | ", backend_mesjid_path(mesjid) %>
-      <%= link_to "Update | ", edit_backend_mesjid_path(mesjid) %>
+      <%= link_to "Edit | ", edit_backend_mesjid_path(mesjid) %>
       <%= link_to "Delete", backend_mesjid_path(mesjid), method: :delete, data: {confirm: "Are You Sure Delete?"} %>
     </td>
   </tr>

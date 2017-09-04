@@ -1,13 +1,24 @@
 <div class="box box-danger">
   <div class="box-header with-borde">
-    <%= simple_form_for @mesjid do |m| %>
+    <%= simple_form_for @mesjid, multipart: true do |m| %>
       <%= m.input :name %>
       <%= m.input :description %>
       <%= m.input :jenis %>
       <%= m.input :address %>
+      <%= m.input :latitude %>
+      <%= m.input :longitude %>
       <%= m.input :kecamatan %>
       <%= m.input :kota %>
       <%= m.association :province %>
+      <%= m.input :tahun_berdiri %>
+      <%= m.input :status_tanah %>
+      <%= m.input :open_time %>
+      <%= m.input :close_time %>
+      <div id="pictures">
+        <%= m.simple_fields_for :assets do |asset| %>
+          <%= render 'asset_fields', f: asset, parent: m %>
+        <% end %>
+      </div>
 
       <%= m.button :submit, class: 'btn btn-success btn-flat'%>
     <% end %>

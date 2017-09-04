@@ -45,7 +45,8 @@ gem 'devise'
 gem 'cancan'
 
 gem 'carrierwave', '~> 1.0'
-gem 'rmagick'
+gem 'mini_magick'
+gem "cocoon"
 
 # for api
 gem 'jb'

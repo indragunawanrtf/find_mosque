@@ -8,20 +8,22 @@ class Backend::MesjidsController < Backend::ApplicationController
 
   def new
     @mesjid = Mesjid.new
+    @assets = @mesjid.assets.new
   end
 
   def create
     @mesjid = Mesjid.new(params_mesjid)
     if @mesjid.save
-      flash[:success] = 'Mesjid successfully created.'
+      flash[:notice] = 'Mesjid successfully created.'
       redirect_to backend_mesjid_path(@mesjid)
     else
-      flash[:error] = @mesjid.errors.full_messages
+      flash[:alert] = @mesjid.errors.full_messages
       render :new
     end
   end
 
   def show
+    @assets = @mesjid.assets
   end
 
   def edit
@@ -29,10 +31,10 @@ class Backend::MesjidsController < Backend::ApplicationController
 
   def update
     if @mesjid.update(params_mesjid)
-      flash[:success] = 'Mesjid successfully updated.'
+      flash[:notice] = 'Mesjid successfully updated.'
       redirect_to backend_mesjid_path(@mesjid)
     else
-      flash[:error] = @mesjid.errors.full_messages
+      flash[:alert] = @mesjid.errors.full_messages
       render :edit
     end
   end
@@ -60,7 +62,7 @@ class Backend::MesjidsController < Backend::ApplicationController
     def params_mesjid
       params.require(:mesjid).permit(:name, :description, :kota, :kecamatan, :address, :latitude, :longitude,
                                      :tahun_berdiri, :jenis, :status_tanah, :province_id, :open_time, :close_time,
-                                     :notes, :user_id)
+                                     :notes, :user_id, assets_attributes: [:id, :assetable_type, :assetable_id, :picture, :_destroy])
     end
 
 end
