@@ -1,0 +1,59 @@
+<div class="box box-danger">
+  <div class="box-header">
+    <h3 class="box-title">Data Table Provinsi</h3>
+  </div>
+  <div class="box-body">
+    <div class="row">
+      <div class="col-sm-6">
+        <%= link_to "Create", new_backend_province_path, class: 'btn btn-success fa fa-archive' %>
+      </div>
+      <div class="pull-right">
+        <div class="example1_filter" class="dataTables_filter">
+          <label>
+            Search:
+            <input class="form-control input-sm" placeholder="" aria-controls="example1" type="search">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+        <thead>
+          <tr role="row">
+            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 176.35px;"
+            aria-sort="ascending" aria-label="Rendering: activate to sort column descending">
+            Nama
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @provinces.each do |province| %>
+        <tr class="odd" role="row">
+          <td class="sorting_1"><%= province.name %></td>
+          <td>
+            <%= link_to "View", backend_province_path(province), class: 'btn btn-info' %>
+            <%= link_to "Edit", edit_backend_province_path(province), class: 'btn btn-success' %>
+            <%= link_to "Delete", backend_province_path(province), method: :delete, data: {confirm: "Are You Sure Delete?"}, class: 'btn btn-danger'%>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th rowspan="1" colspan="1">Nama</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <%= paginate @provinces %>
+</div>
+
+</div>
+</div>
+</div>

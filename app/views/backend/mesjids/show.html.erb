@@ -3,7 +3,7 @@
     <i class="ion ion-clipboard"></i>
     <h2 class="box-title"><%= @mesjid.name %></h2>
     <div class="pull-right">
-      <%= link_to "Edit", edit_backend_mesjid_path(@mesjid), class: 'btn btn-info' %>
+      <%= link_to "Edit", edit_backend_mesjid_path(@mesjid), class: 'btn btn-success' %>
       <%= link_to "Delete", backend_mesjid_path(@mesjid), method: :delete, data: {confirm: "Are You Sure Delete?"}, class: 'btn btn-danger' %>
     </div>
   </div>
@@ -60,13 +60,13 @@
       <th>
         Open Time
       </th>
-      <li><%= @mesjid.open_time.strftime('%H:%M') %></li>
+      <li><%= @mesjid.open_time.try(:strftime, '%H:%M') %></li>
     </ul>
     <ul class="todo-list ui-sortable-handle">
       <th>
         Close Time
       </th>
-      <li><%= @mesjid.close_time.strftime('%H:%M') %></li>
+      <li><%= @mesjid.close_time.try(:strftime, '%H:%M') %></li>
     </ul>
     <div class="box-body">
       <h3>Pictures</h3>
@@ -74,7 +74,7 @@
         <% @assets.each do |asset| %>
           <li><%= image_tag asset.picture_url %></li>
         <% end %>
-      </ul>      
+      </ul>
     </div>
   </div>
 </div>
