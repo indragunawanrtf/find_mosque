@@ -36,7 +36,12 @@ json =
         province: @mesjid.province.name,
         kota: @mesjid.kota,
         address: @mesjid.address,
-        picture: @mesjid.picture.url(:thumbnail),
+        picture: 
+          @assets.map do |as|
+            {
+              url: "#{request.protocol}#{request.host_with_port}#{as.picture_url}"
+            }
+          end,
         open_time: @mesjid.open_time,
         close_time: @mesjid.close_time,
         jenis: @mesjid.jenis,
