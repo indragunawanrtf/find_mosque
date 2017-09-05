@@ -14,7 +14,7 @@ class Mesjid < ApplicationRecord
 	validates_presence_of :kota, :kecamatan, :name
 
 	accepts_nested_attributes_for :assets, reject_if: :all_blank, allow_destroy: true
-	
+
 	def set_code
 		size = Mesjid.where(kota: self.kota, kecamatan: self.kecamatan).size + 1
 		self.code = "#{self.kota.downcase.gsub(' ', '-')}_#{self.kecamatan.downcase.gsub(' ', '-')}_#{size}"

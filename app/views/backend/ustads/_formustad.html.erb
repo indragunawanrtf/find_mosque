@@ -1,0 +1,13 @@
+<div class="box box-danger">
+  <div class="box-header with-borde">
+    <%= simple_form_for @ustad do |u| %>
+      <%= u.input :name %>
+      <%= u.input :description %>
+      <%= u.input :notes %>
+      <%= u.input :bidang %>
+      <%= u.input :pekerjaan %>
+
+      <%= u.button :submit, class: 'btn btn-success btn-flat'%>
+    <% end %>
+  </div>
+</div>
