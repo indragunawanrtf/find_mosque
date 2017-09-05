@@ -11,10 +11,23 @@ class Api::V1::MesjidsController < Api::ApplicationController
 	def create
     @mesjid = Mesjid.new params_mesjid
     if @mesjid.save
-		render json: {status: 201, messages: "Mesjid successfully created."}
+			render json: {status: 201, messages: "Mesjid successfully created."}
     else
       render json: {error:{ messages: @mesjid.errors.full_messages.join(', '), status: 422 }}
     end
+	end
+
+	def update
+    @mesjid = Mesjid.find_by params[:id]
+    if @mesjid.blank?
+      render file: '/api/v1/errors/not_available', status: 401
+    else
+		  if @mesjid.update(params_mesjid)
+				render json: {status: 201, messages: "Mesjid successfully Updated."}
+		  else
+		    render json: {error:{ messages: @mesjid.errors.full_messages.join(', '), status: 422 }}
+		  end
+		end
 	end
 
 	def show
