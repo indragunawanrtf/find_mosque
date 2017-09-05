@@ -1,4 +1,5 @@
 class Api::V1::MesjidsController < Api::ApplicationController
+	before_action :get_user, only: [:create, :update]
 
 	def index
 		if params[:all].present? || (request.headers['latitude'].blank? && request.headers['longitude'].blank?)
@@ -10,6 +11,7 @@ class Api::V1::MesjidsController < Api::ApplicationController
 
 	def create
     @mesjid = Mesjid.new params_mesjid
+    @mesjid.user_id = current_user.id
     if @mesjid.save
 			render json: {status: 201, messages: "Mesjid successfully created."}
     else

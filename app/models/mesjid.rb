@@ -1,4 +1,8 @@
 class Mesjid < ApplicationRecord
+	belongs_to :user
+	has_many :kajians
+	has_many :mesjids
+
 	reverse_geocoded_by :latitude, :longitude
 	after_validation :reverse_geocode  # auto-fetch address
 

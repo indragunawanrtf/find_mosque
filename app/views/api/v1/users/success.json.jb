@@ -1,0 +1,5 @@
+{
+  access_token: user_access_token,
+  name: @user.full_name,
+  user_id: @user.id
+}

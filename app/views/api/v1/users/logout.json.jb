@@ -1,0 +1,4 @@
+{
+  message: "Successfully Logout",
+  code: 200
+}
