@@ -1,6 +1,6 @@
 class Backend::ProvincesController < Backend::ApplicationController
   before_action :prepare_province, only: [:show, :edit, :update, :destroy]
-  before_action :prepare_province, only: [:new, :create, :edit, :update]
+  before_action :prepare_select, only: [:new, :create, :edit, :update]
 
   def index
     @provinces = Province.page(params[:page]).per(params[:per])
@@ -11,12 +11,12 @@ class Backend::ProvincesController < Backend::ApplicationController
   end
 
   def create
-    @province = Province.new params_province
-    if @mesjid.save
+    @province = Province.new(params_province)
+    if @province.save
       flash[:success] = 'Province successfully created.'
-      redirect_to backend_mesjid_path(@mesjid)
+      redirect_to backend_provinces_path(@province)
     else
-      flash[:error] = @mesjid.errors.full_messages
+      flash[:error] = @province.errors.full_messages
       render :new
     end
   end
@@ -28,39 +28,37 @@ class Backend::ProvincesController < Backend::ApplicationController
   end
 
   def update
-    if @mesjid.update params_mesjid
-      flash[:success] = 'Mesjid successfully updated.'
-      redirect_to backend_mesjid_path(@mesjid)
+    if @province.update(params_province)
+      flash[:success] = 'Province successfully updated.'
+      redirect_to backend_provinces_path(@province)
     else
-      flash[:error] = @mesjid.errors.full_messages
+      flash[:error] = @province.errors.full_messages
       render :edit
     end
   end
 
   def destroy
-    if @mesjid.destroy
-      flash[:success] = 'Mesjid successfully deleted.'
+    if @province.destroy
+      flash[:success] = 'Province successfully deleted.'
     else
-      flash[:error] = @mesjid.errors.full_messages
+      flash[:error] = @province.errors.full_messages
     end
 
-    redirect_to backend_mesjids_path
+    redirect_to backend_provinces_path
   end
 
   private
 
-    def prepare_mesjid
-      @mesjid = Mesjid.find params[:id]
+    def prepare_province
+      @province = Province.find params[:id]
     end
 
     def prepare_select
       @users = User.pluck(:full_name, :id)
     end
 
-    def params_mesjid
-      params.require(:mesjid).permit(:name, :description, :kota, :kecamatan, :address, :latitude, :longitude,
-                                     :tahun_berdiri, :jenis, :status_tanah, :province_id, :open_time, :close_time,
-                                     :notes, :user_id)
+    def params_province
+      params.require(:province).permit(:name)
     end
 
 end

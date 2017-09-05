@@ -18,6 +18,10 @@ Rails.application.routes.draw do
     resources :mesjids
   end
 
+  scope module: 'backend' do
+    resources :provinces
+  end
+
   draw :backend
   draw :api
 end
