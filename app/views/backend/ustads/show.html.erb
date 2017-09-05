@@ -1,0 +1,48 @@
+<div class="box box-danger">
+  <div class="box-header">
+    <i class="ion ion-clipboard"></i>
+    <h2 class="box-title"><%= @ustad.name %></h2>
+    <div class="pull-right">
+      <%= link_to "Edit", edit_backend_ustad_path(@ustad), class: 'btn btn-success' %>
+      <%= link_to "Delete", backend_ustad_path(@ustad), method: :delete, data: {confirm: "Are You Sure Delete?"}, class: 'btn btn-danger' %>
+    </div>
+  </div>
+  <div class="box-body">
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        Description
+      </th>
+      <li><%= @ustad.description %></li>
+    </ul>
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        Notes
+      </th>
+      <li><%= @ustad.notes %></li>
+    </ul>
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        Bidang
+      </th>
+      <li><%= @ustad.bidang %></li>
+    </ul>
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        Pekerjaan
+      </th>
+      <li><%= @ustad.pekerjaan %></li>
+    </ul>
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        User Id
+      </th>
+      <li><%= @ustad.user_id %></li>
+    </ul>
+    <ul class="todo-list ui-sortable-handle">
+      <th>
+        Masjid Id
+      </th>
+      <li><%= @ustad.mesjid_id %></li>
+    </ul>
+  </div>
+</div>

@@ -22,6 +22,10 @@ Rails.application.routes.draw do
     resources :provinces
   end
 
+  scope module: 'backend' do
+    resources :ustads
+  end
+
   draw :backend
   draw :api
 end
