@@ -23,7 +23,7 @@ json =
           kajians:
             kajians.map do |kaj|
               {
-                id: kaj.id
+                id: kaj.id,
                 name: kaj.name
               }
 
