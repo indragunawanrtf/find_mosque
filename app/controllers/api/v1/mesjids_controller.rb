@@ -20,7 +20,7 @@ class Api::V1::MesjidsController < Api::ApplicationController
 	end
 
 	def update
-    @mesjid = Mesjid.find_by params[:id]
+    @mesjid = Mesjid.find_by id: params[:id]
     if @mesjid.blank?
       render file: '/api/v1/errors/not_available', status: 401
     else
