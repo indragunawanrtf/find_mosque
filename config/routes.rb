@@ -26,6 +26,10 @@ Rails.application.routes.draw do
     resources :ustads
   end
 
+  scope module: 'backend' do
+    resources :kajians
+  end
+
   draw :backend
   draw :api
 end

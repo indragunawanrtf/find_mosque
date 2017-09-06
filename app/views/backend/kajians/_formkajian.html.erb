@@ -1,0 +1,12 @@
+<div class="box box-danger">
+  <div class="box-header with-borde">
+    <%= simple_form_for @kajian do |k| %>
+      <%= k.input :name %>
+      <%= k.input :description %>
+      <%= k.input :start_at %>
+      <%= k.input :end_at %>
+
+      <%= k.button :submit, class: 'btn btn-success btn-flat'%>
+    <% end %>
+  </div>
+</div>

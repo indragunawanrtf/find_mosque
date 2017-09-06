@@ -5,5 +5,6 @@ namespace :backend, path: '/', constraints: { subdomain: 'app' } do
   resources :mesjids
   resources :provinces
   resources :ustads
+  resources :kajians
 
 end
