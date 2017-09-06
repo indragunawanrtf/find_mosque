@@ -26,7 +26,7 @@ json =
                 id: kaj.id,
                 name: kaj.name
               }
-
+            end,
         }
       end
   }
