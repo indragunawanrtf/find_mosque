@@ -24,5 +24,5 @@ class Api::V1::UsersController < Api::ApplicationController
       render file: '/api/v1/errors/unauthorized', status: 401
     end
   end
-  
+
 end
