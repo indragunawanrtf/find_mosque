@@ -3,6 +3,7 @@ json =
     data:
       @mesjids.map do |mesjid|
         assets = mesjid.assets
+        kajians = mesjid.kajians
         {
           id: mesjid.id,
           name: mesjid.name,
@@ -18,7 +19,14 @@ json =
                 url: "#{request.protocol}#{request.host_with_port}#{as.picture.url}"
               }
             end,
-          url: api_mesjid_url(mesjid.id)
+          url: api_mesjid_url(mesjid.id),
+          kajians:
+            kajians.map do |kaj|
+              {
+                id: kaj.id
+                name: kaj.name
+              }
+
         }
       end
   }
