@@ -3,7 +3,7 @@ class Api::ApplicationController < ApplicationController
   respond_to :json
 
   def get_user
-	@user = User.find_by_access_token(request.headers['Access-Token'])
+  	@user = User.find_by_access_token(request.headers['Access-Token'])
     if @user.blank?
       render file: 'api/v1/errors/invalid_access_token'
     else

@@ -1,5 +1,5 @@
 class Api::V1::UsersController < Api::ApplicationController
-
+  before_action :get_user, only: [:logout, :change_password]
   def login
     @user = User.login(params[:username], params[:password])
     if @user
