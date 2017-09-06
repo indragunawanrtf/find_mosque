@@ -28,4 +28,10 @@ class User < ApplicationRecord
     auth_token.update_columns(os: os, os_version: os_version, app_version: app_version)
   end
 
+  def update_password password, password_confirmation
+    self.password = password
+    self.password_confirmation = password_confirmation
+    self.save
+  end
+
 end
