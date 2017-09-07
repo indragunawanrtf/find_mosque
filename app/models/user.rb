@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :kajians
   has_many :mesjids
   has_many :ustads
+  has_many :contributor_updates
 
   class << self
 		

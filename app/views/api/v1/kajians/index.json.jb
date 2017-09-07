@@ -1,0 +1,18 @@
+json =
+  {
+    data:
+      @kajians.map do |kajian|
+        {
+          id: kajian.id,
+          name: kajian.name,
+          description: kajian.description,
+          mesjid: kajian.mesjid.name,
+          ustad: kajian.ustad.name,
+          start_at: kajian.start_at,
+          end_at: kajian.end_at,
+          url: api_kajian_url(kajian.id)
+        }
+      end
+  }
+
+json

@@ -14,6 +14,7 @@ class Mesjid < ApplicationRecord
 	belongs_to :province
 	has_many :kajians
 	has_many :assets, as: :assetable
+	has_many :contributor_updates, as: :contentable
 
 	validates_presence_of :kota, :kecamatan, :name
 

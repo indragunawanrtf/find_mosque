@@ -25,6 +25,7 @@ class Api::V1::MesjidsController < Api::ApplicationController
       render file: '/api/v1/errors/not_available', status: 401
     else
 		  if @mesjid.update(params_mesjid)
+        @mesjid.contributor_updates.create(user_id: current_user.id)
 				render json: {status: 201, messages: "Mesjid successfully Updated."}
 		  else
 		    render json: {error:{ messages: @mesjid.errors.full_messages.join(', '), status: 422 }}
