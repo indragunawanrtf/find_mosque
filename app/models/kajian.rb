@@ -4,4 +4,6 @@ class Kajian < ApplicationRecord
   has_many :contributor_updates, as: :contentable
 
   scope :by_mesjid, ->(mesjid_id){ where(mesjid_id: mesjid_id) }
+
+  validates_presence_of :mesjid_id, :ustad_id, :name
 end
