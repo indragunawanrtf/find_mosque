@@ -3,4 +3,5 @@ class Asset < ApplicationRecord
   mount_uploader :picture, PictureUploader
 
 	belongs_to :assetable, polymorphic: true, optional: true
+
 end
