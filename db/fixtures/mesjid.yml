@@ -279,3 +279,493 @@ mesjids:
     status_tanah: ''
     open_time: ''
     close_time: ''
+  mesjid_21:
+    name: 'Masjid Fatahillah'
+    description: 'Masjid Fatahillah'
+    address: 'Jl. Marunda RT.09 / RW.01, Marunda, Cilincing, RT.3/RW.7, Marunda, Cilincing, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14150'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Utara'
+    kecamatan: 'Cilincing'
+    latitude:  '-6.0941965'
+    longitude: 106.9575242
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_22:
+    name: 'Masjid Al-Anshor'
+    description: 'Masjid Al-Anshor'
+    address: 'Jl. Salman No.87, RT.2/RW.3, Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Kebon Jeruk'
+    latitude:  '-6.196347'
+    longitude: 106.777929
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_23:
+    name: 'Masjid AL-ATIQ'
+    description: 'Masjid AL-ATIQ'
+    address: 'Jalan Kampung Melayu Besar 1 Blok W No. 134, RT.05 RW.01, Kb. Baru Tebet, Kebon Baru, Tebet, RT.3/RW.1, Kb. Baru, Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12830'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.2261818'
+    longitude: 106.8614632
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_24:
+    name: 'Masjid Al Barkah'
+    description: 'Masjid Al Barkah'
+    address: 'Jl. Al - Barkah I No.17, RT.1/RW.5, Manggarai Sel., Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12860'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.2201201'
+    longitude: 106.848602
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_25:
+    name: 'Masjid Al Mushonif'
+    description: 'Masjid Al Mushonif'
+    address: 'Jl. Rambutan, RT.4/RW.7, Manggarai Sel., Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12860'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.217694'
+    longitude: 106.846939
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_26:
+    name: 'Masjid At Taqwa'
+    description: 'Masjid At Taqwa'
+    address: 'Jalan Barkah No. 19, RT.12/RW.04, Manggarai Selatan, RT.12/RW.4, Manggarai Sel., Jakarta Selatan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12860'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Manggarai Selatan'
+    latitude:  '-6.220189'
+    longitude: 106.846853
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_27:
+    name: 'Masjid Raya Al-Ittihaad'
+    description: 'Masjid Raya Al-Ittihaad'
+    address: 'Jl. Tebet Mas Indah I, RT.8/RW.2, Tebet Bar., Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810'
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.231580'
+    longitude: 106.847642
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_28:
+    name: "Masjid Jami Al Ma'mur"
+    description: "Masjid Jami Al Ma'mur"
+    address: "Jalan Kh. Abdullah Syafe'i, RT.2/RW.6, Bukit Duri, Tebet, RT.5/RW.6, Bukit Duri, Jakarta Selatan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12840"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.224781'
+    longitude: 106.855914
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_29:
+    name: "Masjid Jami' Al Islam"
+    description: "Masjid Jami' Al Islam"
+    address: "Jl. Aipda Ks. Tubun Raya, RT.12/RW.3, Petamburan, Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10260"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Tanah Abang'
+    latitude:  '-6.192636'
+    longitude: 106.806017
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_30:
+    name: "Masjid Al-Makmur"
+    description: "Masjid Al-Makmur"
+    address: "Jl. Raden Saleh Raya No.37, RT.1/RW.4, Cikini, Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Menteng'
+    latitude:  '-6.191168'
+    longitude: 106.842615
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_31:
+    name: "Masjid Alia Cikini"
+    description: "Masjid Alia Cikini"
+    address: "Jl. Cikini Raya No.32, RT.12/RW.5, Cikini, Jakarta Pusat, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Menteng'
+    latitude:  '-6.190986'
+    longitude: 106.837830
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_32:
+    name: "Masjid Jami Al Mansyur"
+    description: "Masjid Jami Al Mansyur"
+    address: "Jl. Sawah Lio II, RT 06 / RW 01, Tambora, RT.5/RW.1, Jemb. Lima, Jakarta Barat, DKI Jakarta, Daerah Khusus Ibukota Jakarta 11250"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Jembatan Lima'
+    latitude:  '-6.146177'
+    longitude: 106.806291
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_33:
+    name: "Masjid Raya Al Amanah"
+    description: "Masjid Raya Al Amanah"
+    address: "Jl. Indra Loka I No.55, RT.8/RW.10, Wijaya Kusuma, Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11460"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Grogol Petamburan'
+    latitude:  '-6.156780'
+    longitude: 106.779855
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_34:
+    name: "Masjid Angke Jakarta"
+    description: "Masjid Angke Jakarta"
+    address: "Jl. Pangeran Tubagus Angke Gg. Mesjid I, RT.1/RW.5, Angke, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.143347'
+    longitude: 106.795904
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_35:
+    name: "Masjid Jami' Annawier"
+    description: "Masjid Jami' Annawier"
+    address: "Jl. Pekojan Raya No.71, RT.3/RW.1, Pekojan, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11240"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.141380'
+    longitude: 106.804462
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_36:
+    name: "Masjid Tambora"
+    description: "Masjid Tambora"
+    address: "Jl. Tambora I No.11, RT.9/RW.2, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11220"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.145134'
+    longitude: 106.810556
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_37:
+    name: "Masjid Hidayatul Ikhsan"
+    description: "Masjid Hidayatul Ikhsan"
+    address: "JL Jembatan Besi, RT. 05/10, RT.2/RW.3, Jemb. Besi, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11320"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.151620'
+    longitude: 106.799570
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_38:
+    name: "Masjid Jami Assalafiyah"
+    description: "Masjid Jami Assalafiyah"
+    address: "Jl. Warung Jati Bar. No.9, RT.3/RW.5, Kalibata, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Pancoran'
+    latitude:  '-6.270280'
+    longitude: 106.831034
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_39:
+    name: "Masjid At-Taibin"
+    description: "Masjid At-Taibin"
+    address: "Jl. Senen Raya IV, RW.2, Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Senen'
+    latitude:  '-6.270280'
+    longitude: 106.831034
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_40:
+    name: "Masjid At-TiN"
+    description: "Masjid At-TiN"
+    address: "Jl. Ahmad. Yani 22, Cemp. Putih, Kota 10570, Rawasari No.16/9, RT.13/RW.9, Cempaka Putih Timur, Cempaka Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Cempaka Putih'
+    latitude:  '-6.189610'
+    longitude: 106.874162
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_41:
+    name: "Masjid Al-Mubarak"
+    description: "Masjid Al-Mubarak"
+    address: "Gg. Al- Mubarak 1 Rt.001/08, No. 24, Jl. Pramuka Sari 3, RT.1/RW.8, Rawasari, Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10570"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Cempaka Putih'
+    latitude:  '-6.189331'
+    longitude: 106.868621
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_42:
+    name: "Masjid Hidayatullah"
+    description: "Masjid Hidayatullah"
+    address: "Jl. Karet Depan, RT.007/RW.04, Karet Semanggi, Setiabudi, RT.3/RW.4, Karet Semanggi, Setia Budi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Setiabudi'
+    latitude:  '-6.217293'
+    longitude: 106.817478
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_43:
+    name: "Masjid Hidayatullah"
+    description: "Masjid Hidayatullah"
+    address: "Jl. Karet Depan, RT.007/RW.04, Karet Semanggi, Setiabudi, RT.3/RW.4, Karet Semanggi, Setia Budi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Setiabudi'
+    latitude:  '-6.217293'
+    longitude: 106.817478
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_44:
+    name: "Masjid Hidayatullah"
+    description: "Masjid Hidayatullah"
+    address: "Jl. Otista Raya No.84, RT.3/RW.5, 6, Kp. Melayu, Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Timur'
+    kecamatan: 'Jatinegara'
+    latitude:  '-6.237350'
+    longitude: 106.868449
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_45:
+    name: "Masjid Nurul Haq"
+    description: "Masjid Nurul Haq"
+    address: "Jl. Asem Baris, RT.7/RW.6, Kb. Baru, Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.235950'
+    longitude: 106.860169
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_46:
+    name: "Masjid Al Huda Muhammadiyah"
+    description: "Masjid Al Huda Muhammadiyah"
+    address: "Jl. Tebet Timur Raya No.565, RT.10/RW.5, Tebet Tim., Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12820"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.234355'
+    longitude: 106.853503
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_47:
+    name: "Masjid Namira"
+    description: "Masjid Namira"
+    address: "Jl. Tebet Barat Dalam V No.3, RT.6/RW.4, Tebet Bar., Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.237274'
+    longitude: 106.847320
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_48:
+    name: "Masjid Jami' An Nur"
+    description: "Masjid Jami' An Nur"
+    address: "Jl. Masjid An Nur No.12, RT.3/RW.2, Menteng Dalam, Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Selatan'
+    kecamatan: 'Tebet'
+    latitude:  '-6.234799'
+    longitude: 106.843028
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_49:
+    name: "Masjid Istiqlal"
+    description: "Masjid Istiqlal"
+    address: "Jl. Taman Wijaya Kusuma, Kelurahan Pasar Baru, Kecamatan Sawah Besar, Jakarta Pusat, Daerah Khusus Ibukota Jakarta"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Pusat'
+    kecamatan: 'Sawah Besar'
+    latitude:  '-6.169938'
+    longitude: 106.830939
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_50:
+    name: "Masjid Jami Al Mukarromah Kampung Bandan"
+    description: "Masjid Jami Al Mukarromah Kampung Bandan"
+    address: "Jalan Kampung Bandan No. 8, Ancol, Pademangan, RT.8/RW.2, RT.1/RW.3, Ancol, Pademangan, Kota Jakarta Utara, Daerah Khusus Ibukota Jakarta 14430"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Utara'
+    kecamatan: 'Pademangan'
+    latitude:  '-6.169938'
+    longitude: 106.830939
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_51:
+    name: "Masjid Baitussalam"
+    description: "Masjid Baitussalam"
+    address: "Jl. Lada Dalam No.1, RT.5/RW.6, Pinangsia, Tamansari, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11110"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tamansari'
+    latitude:  '-6.136536'
+    longitude: 106.815680
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_52:
+    name: "Masjid Jami' Kampung Baru"
+    description: "Masjid Jami' Kampung Baru"
+    address: "Jl. Bandengan Selatan-Utara,Jakarta Barat., RT.12/RW.5, Pekojan, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11240"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.136580'
+    longitude: 106.802761
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_53:
+    name: "Masjid Angke (Jami Al-Anwar)"
+    description: "Masjid Angke (Jami Al-Anwar)"
+    address: "Jl. Pangeran Tubagus Angke Gg. Mesjid I, RT.1/RW.5, Angke, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.143471'
+    longitude: 106.795938
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_54:
+    name: "Masjid Kebon Jeruk"
+    description: "Masjid Kebon Jeruk"
+    address: "Jl. Pangeran Tubagus Angke Gg. Mesjid I, RT.1/RW.5, Angke, Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11330"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Barat'
+    kecamatan: 'Tambora'
+    latitude:  '-6.143471'
+    longitude: 106.795938
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
+  mesjid_55:
+    name: "Masjid Pangeran Diponegoro"
+    description: "Masjid Pangeran Diponegoro"
+    address: "Jl. Raya Taman Mini Indah, Ceger, Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13810"
+    province: 'DKI Jakarta'
+    kota: 'Jakarta Timur'
+    kecamatan: 'Cipayung'
+    latitude:  '-6.303397'
+    longitude: 106.892343
+    jenis: 'Mesjid'
+    tahun_berdiri: ''
+    status_tanah: ''
+    open_time: ''
+    close_time: ''
