@@ -5,7 +5,7 @@ class Api::V1::MesjidsController < Api::ApplicationController
 		if params[:all].present? || (request.headers['latitude'].blank? && request.headers['longitude'].blank?)
 			@mesjids = Mesjid.page(params[:page])
 		else
-			@mesjids = Mesjid.near([request.headers['latitude'], request.headers['longitude']], 20)
+			@mesjids = Mesjid.near([request.headers['latitude'], request.headers['longitude']], 20).page(params[:page])
 		end
 	end
 
