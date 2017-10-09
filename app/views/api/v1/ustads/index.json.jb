@@ -1,0 +1,18 @@
+json =
+  {
+    data:
+      @ustads.map do |ustad|
+        {
+          id: ustad.id,
+          name: ustad.name,
+          description: ustad.description,
+          notes: ustad.notes,
+          bidang: ustad.bidang,
+          pekerjaan: ustad.pekerjaan,
+          mesjid: ustad.mesjid.name,
+          url: api_ustad_url(ustad.id)
+        }
+      end
+  }
+
+json

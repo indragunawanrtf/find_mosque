@@ -1,27 +1,27 @@
-<li class="dropdown">
-  <a href="#" class="fa fa-table" data-toggle="dropdown" aria-expanded="false">
-    Data
+<li class="dropdown user user-menu">
+  <a href="#" data-toggle="dropdown" aria-expanded="false">
+    <%= image_tag("findmosque/data.jpg", class: "user-image", alt: "User Image") %>Data
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <%= link_to 'Kajian', backend_kajians_path %>
+      <%= link_to ' Kajian', backend_kajians_path, class: 'fa fa-microphone' %>
     </li>
     <li>
-      <%= link_to 'Masjid', backend_mesjids_path %>
+      <%= link_to ' Masjid', backend_mesjids_path, class: 'fa fa-location-arrow' %>
     </li>
     <li>
-      <%= link_to 'Ustadz', backend_ustads_path %>
+      <%= link_to ' Ustadz', backend_ustads_path, class: 'fa fa-street-view' %>
     </li>
     <li>
-      <%= link_to 'Provinsi', backend_provinces_path %>
+      <%= link_to ' Provinsi', backend_provinces_path, class: 'fa fa-map-pin' %>
     </li>
     <li class="divider"></li>
     <li>
-      <%= link_to 'User' %>
+      <%= link_to ' User', class: 'fa fa-user' %>
     </li>
     <li>
-      <%= link_to 'Report' %>
+      <%= link_to ' Report', class: 'fa fa-area-chart' %>
     </li>
   </ul>
 </li>

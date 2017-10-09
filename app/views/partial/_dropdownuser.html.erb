@@ -1,0 +1,31 @@
+<li class="dropdown user user-menu">
+  <a href="#" data-toggle="dropdown" aria-expanded="false">
+    <%= image_tag("findmosque/user1.png", class: "user-image", alt: "User Image") %>Admin Site
+  </a>
+  <ul class="dropdown-menu">
+    <li class="user-header">
+      <%= image_tag("findmosque/user1.png", class: "user-image", alt: "User Image") %>
+      <p>SUPER ADMIN - Find Mosque
+        <small>Welcome Super Admin</small>
+      </p>
+    </li>
+    <li class="user-body">
+      <div class="row">
+        <div class="col-xs-4 text-center">
+          <a href="#">Home</a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="#">Profile</a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="#">About</a>
+        </div>
+      </div>
+    </li>
+    <li class="user-footer">
+      <div class="pull-right">
+        <%= link_to "Log Out", destroy_user_session_path, method: :delete, data: {confirm: "Are You Sure Exit?"} ,class: 'btn btn-default btn-flat' %>
+      </div>
+    </li>
+  </ul>
+</li>

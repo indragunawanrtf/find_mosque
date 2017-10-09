@@ -1,0 +1,15 @@
+json =
+  {
+   data:
+    {
+      id: @ustad.id,
+      name: @ustad.name,
+      description: @ustad.description,
+      notes: @ustad.notes,
+      bidang: @ustad.bidang,
+      pekerjaan: @ustad.pekerjaan,
+      mesjid: @ustad.mesjid.name,
+    }
+  }
+
+json

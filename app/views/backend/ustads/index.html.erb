@@ -74,10 +74,14 @@
 </div>
 </div>
 
-<div class="row">
-  <%= paginate @ustads %>
+<div class="col-sm-5">
+  <b>Showing Data
+  <%= @ustads.count%>
+  Entries</b>
 </div>
 
-</div>
-</div>
+<div class="row">
+  <div class="pull-right">
+    <%= paginate @ustads %>
+  </div>
 </div>

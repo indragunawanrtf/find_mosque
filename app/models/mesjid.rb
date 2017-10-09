@@ -1,5 +1,5 @@
 class Mesjid < ApplicationRecord
-	belongs_to :user
+	belongs_to :user, optional: true
 	has_many :kajians
 	has_many :mesjids
 

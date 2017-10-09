@@ -56,10 +56,14 @@
 </div>
 </div>
 
-<div class="row">
-  <%= paginate @kajians %>
+<div class="col-sm-5">
+  <b>Showing Data
+  <%= @kajians.count%>
+  Entries</b>
 </div>
 
-</div>
-</div>
+<div class="row">
+  <div class="pull-right">
+    <%= paginate @kajians %>
+  </div>
 </div>
