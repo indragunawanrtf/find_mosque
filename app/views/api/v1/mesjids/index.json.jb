@@ -16,7 +16,7 @@ json =
           pictures:
             [
               {
-                url: "#{request.protocol}#{request.host_with_port}/assets/image_mesjid.jpg"
+                url: "#{request.protocol}#{request.host_with_port}#{asset_path('image_mesjid.jpg')}"
               }
             ],
           url: api_mesjid_url(mesjid.id),
