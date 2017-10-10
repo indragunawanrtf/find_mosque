@@ -14,11 +14,11 @@ json =
           kota: mesjid.kota,
           address: mesjid.address,
           pictures:
-            [
+            assets.map do |as|
               {
-                url: "#{request.protocol}#{request.host_with_port}/assets/image_mesjid.jpg"
+                url: "#{request.protocol}#{request.host_with_port}#{as.picture.url}"
               }
-            ],
+            end,
           url: api_mesjid_url(mesjid.id),
           kajians:
             kajians.map do |kaj|
