@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/amatsuda/kaminari.git
-  revision: 2d22392756fe2f2a54b44d439df378f62096ad1d
+  revision: 508009c4fdc2305fdc3a5e1afb806720fcc49a84
   specs:
     kaminari (1.0.1)
       activesupport (>= 4.1.0)
@@ -63,7 +63,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
-    autoprefixer-rails (7.1.2.4)
+    autoprefixer-rails (7.1.5)
       execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
@@ -80,7 +80,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    carrierwave (1.1.0)
+    carrierwave (1.2.1)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
@@ -169,6 +169,11 @@ GEM
       ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.3)
       actionpack (= 5.1.3)
       activesupport (= 5.1.3)
@@ -264,6 +269,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.2)
   rails-erd
+  rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
@@ -275,4 +281,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.15.3
